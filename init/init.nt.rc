@@ -26,6 +26,14 @@ on boot
     chown system system /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips/all_white_brightness
     chmod 0666 /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips/all_white_brightness
 
+    # Vibrator
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+
 on property:sys.boot_completed=1
     # Glyphs
     write /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips/operating_mode 1
+    # DeviceExtras
+    chown system system /sys/class/qcom-battery/wireless_boost_en
+    chmod 0666 /sys/class/qcom-battery/wireless_boost_en
