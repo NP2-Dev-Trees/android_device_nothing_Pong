@@ -396,6 +396,11 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl
 
+# RIL
+PRODUCT_PACKAGES += \
+    Ims \
+    QtiTelephony
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
