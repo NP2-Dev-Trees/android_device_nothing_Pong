@@ -198,6 +198,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Glyphify
+PRODUCT_PACKAGES += \
+    Glyphify
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk_platform.vendor \
