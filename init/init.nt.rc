@@ -39,3 +39,5 @@ on property:sys.boot_completed=1
     # DeviceExtras
     chown system system /sys/class/qcom-battery/wireless_boost_en
     chmod 0666 /sys/class/qcom-battery/wireless_boost_en
+    chown system system /vendor/bin/restart_radio
+    chmod 755 /vendor/bin/restart_radio

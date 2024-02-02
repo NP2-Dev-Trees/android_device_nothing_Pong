@@ -1,0 +1,9 @@
+#!/vendor/bin/sh
+
+until [ "$(getprop gsm.sim.state)" != "" ]; do
+  sleep 1
+done
+
+service call phone 187 i32 0 i32 0
+sleep 2
+service call phone 187 i32 0 i32 1

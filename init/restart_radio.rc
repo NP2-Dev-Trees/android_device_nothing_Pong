@@ -1,0 +1,9 @@
+service vendor.restart_radio /vendor/bin/restart_radio
+    class main
+    user root
+    group shell
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start vendor.restart_radio

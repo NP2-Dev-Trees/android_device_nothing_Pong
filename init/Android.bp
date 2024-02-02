@@ -44,6 +44,13 @@ prebuilt_etc {
     device_specific: true,
 }
 
+sh_binary {
+    name: "restart_radio",
+    init_rc: ["restart_radio.rc"],
+    src: "restart_radio.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
