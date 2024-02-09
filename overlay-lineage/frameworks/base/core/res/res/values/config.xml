@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportScreenOffUdfps">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">false</bool>
+
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>10</item>             <!--  0 - 1 -->
         <item>20</item>             <!--  1 - 2 -->
