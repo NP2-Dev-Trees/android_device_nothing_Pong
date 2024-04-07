@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_Pong.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_Pong-user \
-    lineage_Pong-userdebug \
-    lineage_Pong-eng
+    lineage_Pong-ap1a-eng \
+    lineage_Pong-ap1a-user \
+    lineage_Pong-ap1a-userdebug
